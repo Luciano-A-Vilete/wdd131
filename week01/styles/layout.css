@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header, .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.navbar {
+    background-color: black;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: grey;
+}
+
+.container {
+    display: flex;
+}
+
+.main {
+    flex: 3;
+    background-color: lightgrey;
+    padding: 20px;
+}
+
+.aside {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+}
