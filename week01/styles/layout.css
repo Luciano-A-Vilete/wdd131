@@ -1,6 +1,12 @@
-body {
+html, body {
+    height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 .header, .footer {
@@ -30,16 +36,22 @@ body {
 
 .container {
     display: flex;
+    flex: 1;
+    height: 100%;
 }
 
 .main {
     flex: 3;
     background-color: lightgrey;
     padding: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .aside {
     flex: 1;
     background-color: white;
     padding: 20px;
+    display: flex;
+    align-items: center;
 }
