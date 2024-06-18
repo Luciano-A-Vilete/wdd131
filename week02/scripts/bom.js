@@ -1,36 +1,45 @@
-// Referências aos elementos
+// References to elements
 const input = document.getElementById('favchap');
 const button = document.querySelector('button');
 const list = document.getElementById('list');
 
-// Função para adicionar um capítulo
+// Function to add a chapter
 function addChapter() {
-    // Cria um novo item de lista e botão de deletar
-    const li = document.createElement('li');
-    const deleteButton = document.createElement('button');
+    // Check if the input is not blank
+    if (input.value.trim() !== '') {
+        // Create a new list item and delete button
+        const li = document.createElement('li');
+        const deleteButton = document.createElement('button');
 
-    // Configura o texto do item de lista e do botão
-    li.textContent = input.value;
-    deleteButton.textContent = '❌';
+        // Set the text for the list item and delete button
+        li.textContent = input.value;
+        deleteButton.textContent = '❌';
 
-    // Adiciona classes aos elementos, se necessário (opcional)
-    li.classList.add('list-item');
-    deleteButton.classList.add('delete');
+        // Optionally add classes to elements (optional)
+        li.classList.add('list-item');
+        deleteButton.classList.add('delete');
 
-    // Anexa o botão de deletar ao item de lista
-    li.appendChild(deleteButton);
+        // Append the delete button to the list item
+        li.appendChild(deleteButton);
 
-    // Anexa o item de lista à lista não ordenada
-    list.appendChild(li);
+        // Append the list item to the unordered list
+        list.appendChild(li);
 
-    // Limpa o campo de entrada
-    input.value = '';
+        // Add click event to the delete button to remove the list item
+        deleteButton.addEventListener('click', function() {
+            list.removeChild(li);
+        });
 
-    // Adiciona evento de clique ao botão de deletar
-    deleteButton.onclick = function() {
-        list.removeChild(li);
-    };
+        // Clear the input field
+        input.value = '';
+    } else {
+        // If input is blank, do nothing and return focus to input field
+        alert("Please enter a chapter name.");
+    }
+
+    // Set focus back to input field regardless of whether a list item was created or not
+    input.focus();
 }
 
-// Adiciona evento de clique ao botão principal para adicionar um capítulo
+// Add click event listener to 'Add Chapter' button
 button.addEventListener('click', addChapter);
