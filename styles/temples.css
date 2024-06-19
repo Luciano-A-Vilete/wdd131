@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #4B0082;
+    color: white;
+    padding: 1em;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em;
+    display: block;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #6A0DAD;
+    border-radius: 5px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-toggle {
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+main h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+    justify-items: center;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+footer {
+    background: #4B0082;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.5em 0;
+}
+
+/* Styles for smaller screens */
+@media (max-width: 599px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+}
