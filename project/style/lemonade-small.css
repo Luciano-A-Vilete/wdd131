@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inconsolata:wght@200..900&family=Poetsen+One&display=swap');
+
+
+body{
+    margin: 0;
+    font-family: "Inconsolata", monospace;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "Poetsen One", sans-serif;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+
+  }
+  .banner{
+    background-image: url("../img/lemon-1444025_1280.webp");
+    background-size: cover;
+  }
+  
+  .container ,img{
+    width: 100%;
+   
+
+   
+  }
+  .container{
+    height: 300px;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  .centered2 {
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  
+
+
+
+  .recipe{
+
+    padding: 10px;
+  }
+
+
+  .middle{
+    text-align: center;
+  }
+
+.sel, input{
+  padding: 10px;
+  margin: 0 10px;
+
+}
+
+
+
+.sel{
+width: 50%;
+}
+.center{
+  text-align: center;
+  padding: 4px;
+}
+  footer{
+    background-color: #E7E154 ;
+   }
+.recipe-content{
+  background-color: #E7E154;
+  padding: 10px;
+  box-shadow: 0 0 4px black;
+
+}
+   .mcontent, main{
+    margin: 0 10px;
+   }
+
+   select{
+    margin: 0 10px;
+   }
+
+
+   
+
+  nav{
+   
+    padding: 10px;
+  }
+   button {
+    display: flex;
+    justify-content: center;
+ 
+ 
+  
+}
+
+.footer{
+text-align: center;
+}
+
+.nav-links {
+    display: none; 
+    width: 100%;
+}
+
+.nav-links a {
+  display: block;
+    padding: 1rem;
+    width: 100%;
+}
+
+.nav-links.active {
+    display: block; 
+}
+
+ul{
+  list-style-type: none;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: "Fjalla One", sans-serif;}
+	h3{
+		text-align: center;
+	}
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+img{
+    max-width: 100%;
+}
+.navigation {
+	
+  background-color:rgba(252, 245, 235, .8);
+	display: flex;
+	flex-direction: column;
+  
+  
+}
+h2 {
+    align-self: flex-start; 
+  }
+.navigation a {
+	display: none;
+ font-size: larger;
+	color:black;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+
+header {
+
+	display: grid;
+	grid-gap: 1rem;
+background-color:rgba(252, 245, 235, .8);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 30px #333;
+
+
+}
+
+.lemonade-product {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lemonade-product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.grid{
+  margin: 0  10px;
+  background-color: #E7E154;
+  padding: 10px;
+  border-radius: 10px;
+ }
+
+ .dislike-btn{
+  background-color: #E7E154;
+  padding: 10px;
+ }
+
+
+
+   
