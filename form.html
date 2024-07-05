@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>WDD 131 - Dynamic Web Fundamentals - Luciano Armando Vilete</title> 
+    <meta name="description" content=" WDD 131 - Dynamic Web Fundamentals - Luciano Armando Vilete"> 
+    <meta name="author" content="Luciano Armando Vilete"> 
+    <link rel="stylesheet" href="styles/form-small.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h2>Product Review</h2>
+    </header>
+    <main>
+        <div class="form-container">
+            <form id="reviewForm" action="review.html" method="get">
+                <label for="productName">Product Name</label>
+                <select id="productName" name="productName" required>
+                    <option value="">Choose a product</option>
+                </select>
+    
+                <label for="rating">Overall Rating</label>
+                <div class="stars">
+                    <input type="radio" name="rating" id="rating1" value="1">
+                    <label for="rating1">&star;</label>
+                    <input type="radio" name="rating" id="rating2" value="2">
+                    <label for="rating2">&star;&star;</label>
+                    <input type="radio" name="rating" id="rating3" value="3">
+                    <label for="rating3">&star;&star;&star;</label>
+                    <input type="radio" name="rating" id="rating4" value="4">
+                    <label for="rating4">&star;&star;&star;&star;</label>
+                    <input type="radio" name="rating" id="rating5" value="5">
+                    <label for="rating5">&star;&star;&star;&star;&star;</label>
+                </div>
+    
+                <label for="installationDate">Date of Installation</label>
+                <input type="date" id="installationDate" name="installationDate">
+    
+                <label>Which features did you find useful? <span>(Check all that apply)</span></label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="durability" name="features" value="durability"> <span>Durability</span><br>
+                    <input type="checkbox" id="use" name="features" value="ease_use"> <span>Ease of Use</span><br>
+                    <input type="checkbox" id="performance" name="features" value="performance"> <span>Performance</span><br>
+                    <input type="checkbox" id="design" name="features" value="design"> <span>Design</span>
+                </div>
+    
+                <label for="text">Written Review (optional)</label>
+                <textarea name="text" id="text" rows="4"></textarea>
+    
+                <label for="userName">Your Name (optional)</label>
+                <input type="text" id="userName" name="userName">
+    
+                <input type="submit" value="Submit" name="submit">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> Luciano Armando Vilete </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
