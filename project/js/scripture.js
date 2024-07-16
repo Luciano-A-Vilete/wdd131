@@ -22,17 +22,14 @@ function selectScenario() {
 
 
     switch(selectedOption) {
-        case "recipe":
-            contentDiv.innerHTML = "<p>The best lemonade recipe for a summer party typically involves fresh lemons, sweetener, and a touch of creativity. Here's a refreshing recipe to try:</p><ul><li>Freshly squeezed lemon juice</li><li>Simple syrup (sugar dissolved in equal parts water)</li><li>Cold water</li><li>Sliced lemons and fresh mint for garnish</li></ul>";
+        case "pearlofgreatprice":
+            contentDiv.innerHTML = "<p>If you want to know more about the relation and teachings of God with the ld Testament Patriarchs like Moses, Abraham and Enoch, you can find it in The Pearl of Great Price.</p>";
             break;
-        case "flavors":
-            contentDiv.innerHTML = "<p>You can find unique lemonade flavors at specialty food stores, farmer's markets, or by experimenting with your own recipes at home. Some unusual flavors to try include lavender, cucumber-mint, or strawberry-basil.</p>";
+        case "bookofmormon":
+            contentDiv.innerHTML = "<p>If you want to know more about Ancient Americans History of Faith and Development, you should try to read The Book of Mormon, Another Testament of Jesus Christ!</p>";
             break;
-        case "vegan-sugar-free":
-            contentDiv.innerHTML = "<p>For vegan or sugar-free lemonade recipes, you can explore online recipe websites, vegan cooking blogs, or specialty cookbooks focused on plant-based and sugar-free cooking. You can also substitute traditional sweeteners with alternatives like agave syrup, stevia, or monk fruit sweetener.</p>";
-            break;
-        case "large-crowd":
-            contentDiv.innerHTML = "<p>To make lemonade for a large crowd, you'll need:</p><ul><li>Lots of lemons</li><li>Sugar or sweetener</li><li>Water</li><li>A large pitcher or dispenser</li><li>Ice cubes</li><li>Lemon slices and mint leaves for garnish (optional)</li></ul><p>Consider using a lemonade concentrate or preparing the lemonade in batches to ensure it stays fresh and cold throughout the event.</p>";
+        case "doctrineandcovenants":
+            contentDiv.innerHTML = "<p>If you want to discover if God still talks with man and reveal His will and Plans, you can find answer to this points reading Doctrine & Covenants.</p>";
             break;
         default:
             contentDiv.innerHTML = "<p>Please select a scenario from the dropdown menu.</p>";

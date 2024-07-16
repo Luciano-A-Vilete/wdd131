@@ -1,8 +1,12 @@
 @media screen and ( min-width: 600px){
     body{
         margin: 0;
-     
+        font-family: "Kameron", serif;
     }
+
+    h1,h2,h3,h4,h5,h6{
+        font-family: "Teko";
+      }
 
     .container ,img{
         width: 100%;
@@ -11,7 +15,7 @@
       }
     .recipe{
         display: grid;
-           grid-template-columns:  1fr 1fr  ;
+        grid-template-columns:  1fr 1fr  ;
            /* grid-gap: 20px; */
        
        }
@@ -24,8 +28,8 @@
        }
 
        .footer{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
  
        margin: 0 20px;
        }
@@ -37,7 +41,7 @@
 	header {
 		display: flex;
 		align-items: center;
-	justify-content: space-between;
+	    justify-content: space-between;
     
 
 	}
@@ -78,7 +82,7 @@
     }
 
 
-    #lemonade-gallery {
+    #scriptures-gallery {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 20px;

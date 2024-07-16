@@ -1,23 +1,23 @@
-const lemonadeGallery = [
+const scriptureGallery = [
     {
-      title: "Strawberry Lemonade",
-      imageUrl: "../project/img/strawbery.webp",
+      title: "Book of Mormon",
+      imageUrl: "../project/img/bom.webp",
       likes: 0,
     },
     {
-      title: "Classic Lemonade",
-      imageUrl: "../project/img/classic-lemonade.webp",
+      title: "Doctrine & Covenants",
+      imageUrl: "../project/img/dec.webp",
       likes: 0,
     },
     {
-      title: "Mango Smoothie",
-      imageUrl: "../project/img/classic-lemonade.webp",
+      title: "Pearl of Great Price",
+      imageUrl: "../project/img/pogp.webp",
       likes: 0,
     },
   ];
 
-  function createLemonadeGalleryElements(container, lemonadeGallery) {
-    lemonadeGallery.forEach((product, index) => {
+  function createscriptureGalleryElements(container, scriptureGallery) {
+    scriptureGallery.forEach((product, index) => {
       const productElement = document.createElement("div");
       productElement.classList.add("lemonade-product");
 
@@ -51,22 +51,22 @@ const lemonadeGallery = [
     });
   }
 
-  const lemonadeGalleryContainer = document.getElementById("lemonade-gallery");
+  const scriptureGalleryContainer = document.getElementById("lemonade-gallery");
 
   loadFromLocalStorage();
-  createLemonadeGalleryElements(lemonadeGalleryContainer, lemonadeGallery);
+  createscriptureGalleryElements(scriptureGalleryContainer, scriptureGallery);
 
   function saveToLocalStorage(index, key, value) {
-    let gallery = JSON.parse(localStorage.getItem("lemonadeGallery")) || lemonadeGallery;
+    let gallery = JSON.parse(localStorage.getItem("scriptureGallery")) || scriptureGallery;
     gallery[index][key] = value;
-    localStorage.setItem("lemonadeGallery", JSON.stringify(gallery));
+    localStorage.setItem("scriptureGallery", JSON.stringify(gallery));
   }
 
   function loadFromLocalStorage() {
-    const gallery = JSON.parse(localStorage.getItem("lemonadeGallery"));
+    const gallery = JSON.parse(localStorage.getItem("scriptureGallery"));
     if (gallery) {
       gallery.forEach((product, index) => {
-        lemonadeGallery[index].likes = product.likes;
+        scriptureGallery[index].likes = product.likes;
       });
     }
   }
